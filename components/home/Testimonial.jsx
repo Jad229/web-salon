@@ -10,12 +10,12 @@ function Testimonial() {
           height={500}
         />
       </div>
-      <div className="flex-start flex-col px-3 py-10 gap-12 lg:w-1/4">
+      <div className="flex-start w-2/3 flex-col px-3 py-10 gap-12 lg:w-1/4">
         <h2 className="text-3xl font-bold">Why Our Clients Choose Us?</h2>
         <p className="text-xl">
           We provide only the best services to our clients
         </p>
-        <p className="w-2/3 text-xl text-neutral-500">
+        <p className="lg:w-2/3 text-xl text-neutral-500">
           With years of expertise and client satisfaction we guarantee we can
           meet your every need
         </p>

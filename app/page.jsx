@@ -1,5 +1,6 @@
 import Hero from "@components/home/Hero";
 import PopularProducts from "@components/home/PopularProducts";
+import PopularServices from "@components/home/PopularServices";
 import Testimonial from "@components/home/Testimonial";
 import Image from "next/image";
 
@@ -18,6 +19,7 @@ function Home() {
       <Hero />
       <Testimonial />
       <PopularProducts />
+      <PopularServices />
     </section>
   );
 }

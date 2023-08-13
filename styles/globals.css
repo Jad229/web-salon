@@ -43,15 +43,15 @@ body {
 /* Button Styles */
 
 .yellow_btn {
-  @apply rounded-lg bg-amber-300 py-5 px-11 transition-all font-semibold hover:bg-black hover:text-white hover:border hover:border-black text-center text-sm flex items-center justify-center;
+  @apply rounded-lg bg-amber-300 py-5 px-11 transition-all drop-shadow-2xl  font-semibold hover:bg-black hover:text-white hover:border hover:border-black text-center text-sm flex items-center justify-center;
 }
 
 .black_btn {
-  @apply rounded-lg bg-black py-5 px-11 text-amber-300 transition-all font-semibold hover:bg-white hover:border hover:border-black hover:text-black text-center text-sm flex items-center justify-center;
+  @apply rounded-lg bg-black py-5 px-11 text-amber-300 drop-shadow-2xl  transition-all font-semibold hover:bg-white hover:border hover:border-black hover:text-black text-center text-sm flex items-center justify-center;
 }
 
 .outline_btn {
-  @apply rounded-lg border border-black py-5 px-11 transition-all font-bold hover:bg-black hover:border hover:border-black hover:text-amber-300 text-center text-sm flex items-center justify-center;
+  @apply rounded-lg border border-black py-5 px-11 drop-shadow-2xl transition-all font-bold hover:bg-black hover:border hover:border-black hover:text-amber-300 text-center text-sm flex items-center justify-center;
 }
 
 /* Nav Component */
