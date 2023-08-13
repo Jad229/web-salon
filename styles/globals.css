@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
   background-color: #d9d9d9;
   overflow-x: hidden;
 }
@@ -13,7 +13,8 @@ body {
 /* Home Page Styles */
 
 .hero {
-  min-height: 80vh;
+  padding: 20px;
+  min-height: 100vh;
   min-width: 90vw;
 }
 
@@ -67,6 +68,10 @@ body {
   @apply text-sm text-gray-700 hover:text-gray-500 font-medium;
 }
 
+/* Footer Component Styles */
+.footer_headings {
+  @apply text-left text-xl font-bold;
+}
 /* Tailwind Layout Styles */
 .flex-center {
   @apply flex justify-center items-center;

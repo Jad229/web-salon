@@ -11,7 +11,7 @@ function Testimonial() {
         />
       </div>
       <div className="flex-start w-2/3 flex-col px-3 py-10 gap-12 lg:w-1/4">
-        <h2 className="text-3xl font-bold">Why Our Clients Choose Us?</h2>
+        <h3 className="text-3xl font-bold">Why Our Clients Choose Us?</h3>
         <p className="text-xl">
           We provide only the best services to our clients
         </p>
