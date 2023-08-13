@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Sail&family=Space+Grotesk:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+}
+
+/* Home Page Styles */
+
+.hero {
+  min-height: 80vh;
+  min-width: 90vw;
+}
+
+.bg-img-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
+/* Tailwind Styles */
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6;
+}
+
+/* Home Page Styles */
+.heading_text {
+  @apply text-left font-bold text-5xl;
+}
+
+.subheading_text {
+  @apply text-center font-bold text-4xl;
+}
+
+/* Button Styles */
+
+.yellow_btn {
+  @apply rounded-lg bg-amber-300 py-5 px-11 transition-all font-semibold hover:bg-black hover:text-white hover:border hover:border-black text-center text-sm flex items-center justify-center;
+}
+
+.black_btn {
+  @apply rounded-lg bg-black py-5 px-11 text-amber-300 transition-all font-semibold hover:bg-white hover:border hover:border-black hover:text-black text-center text-sm flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply rounded-lg border border-black py-5 px-11 transition-all font-bold hover:bg-black hover:border hover:border-black hover:text-amber-300 text-center text-sm flex items-center justify-center;
+}
+
+/* Nav Component */
+.logo_text {
+  font-family: "Sail", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.dropdown {
+  @apply absolute right-0 top-0 mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* Tailwind Layout Styles */
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
