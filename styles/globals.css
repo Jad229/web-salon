@@ -7,7 +7,6 @@
 body {
   font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
   background-color: #d9d9d9;
-  overflow-x: hidden;
 }
 
 /* Home Page Styles */
@@ -15,7 +14,7 @@ body {
 .hero {
   padding: 20px;
   min-height: 100vh;
-  min-width: 90vw;
+  min-width: 80vw;
 }
 
 .bg-img-container {

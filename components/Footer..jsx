@@ -3,11 +3,11 @@ import Link from "next/link";
 function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="flex flex-col gap-10 bg-black text-white flex-between w-screen py-3">
+    <footer className="flex flex-col gap-10 bg-black text-white flex-between w-full py-3 sm:px-3">
       <Link href="/" className="flex gap-2 flex-center">
         <p className="logo_text">Pretty Queen</p>
       </Link>
-      <div className="footer--info flex-start flex-col lg:flex-row gap-12">
+      <div className="footer--info w-full flex-between flex-col lg:flex-row gap-12">
         <div className="legal">
           <h4 className="footer_headings">Legal</h4>
           <Link href="/privacy">
