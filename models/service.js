@@ -1,6 +1,6 @@
 import { Schema, model, models } from "mongoose";
 
-const serviceSchema = new Schema({
+const ServiceSchema = new Schema({
   name: {
     type: String,
     required: [true, "Service needs a name"],
@@ -9,12 +9,12 @@ const serviceSchema = new Schema({
     type: Number,
     required: [true, "Service needs a price"],
   },
-  type: {
+  tag: {
     type: String,
     required: [true, "Service needs a type"],
   },
 });
 
-const Service = model.Service || models("Service", serviceSchema);
+const Service = models.Service || model("Service", ServiceSchema);
 
 export default Service;
