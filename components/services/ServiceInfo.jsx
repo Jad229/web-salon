@@ -1,10 +1,10 @@
 import React from "react";
 
-function ServiceInfo() {
+function ServiceInfo({ name, price }) {
   return (
     <div className="">
-      <h2>{serviceType}</h2>
-      <p></p>
+      <h2>{name}</h2>
+      <p>from ${price}</p>
     </div>
   );
 }
