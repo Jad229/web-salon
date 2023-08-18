@@ -5,9 +5,10 @@ function ServicesList({ services, name }) {
     <div>
       <h2>{name}</h2>
       <hr />
-      {services.map((service, idx) => (
-        <ServiceInfo key={idx} name={service.name} price={service.price} /> // Added key prop
-      ))}
+      {services &&
+        services.map((service, idx) => (
+          <ServiceInfo key={idx} name={service.name} price={service.price} /> // Added key prop
+        ))}
     </div>
   );
 }

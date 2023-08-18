@@ -19,8 +19,6 @@ function Services() {
     getServices();
   }, []);
 
-  console.log(servicesData);
-
   return (
     <section>
       <div>
@@ -28,9 +26,17 @@ function Services() {
       </div>
       <div>
         <div>
-          <ServicesList services={servicesData.hair} name="hair" />
+          <ServicesList services={servicesData.hair} name="Hair" />
+          <ServicesList services={servicesData.color} name="Color" />
+          <ServicesList
+            services={servicesData.conditioning}
+            name="Conditioning"
+          />
         </div>
-        <div></div>
+        <div>
+          <ServicesList services={servicesData.spa} name="Spa" />
+          <ServicesList services={servicesData.nail} name="Nail" />
+        </div>
       </div>
     </section>
   );
