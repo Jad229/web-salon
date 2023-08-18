@@ -5,7 +5,18 @@ export async function GET(req) {
   try {
     await connectDB();
     const services = await Service.find({}); // Find all services
-    return new Response(JSON.stringify(services), {
+
+    const sortedServices = services.reduce((acc, service) => {
+      if (!acc[service.tag]) {
+        acc[service.tag] = [];
+      }
+
+      acc[service.tag].push(service);
+
+      return acc;
+    }, {});
+
+    return new Response(JSON.stringify(sortedServices), {
       status: 201,
     });
   } catch (error) {
