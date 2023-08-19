@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <section className="home w-full flex flex-col ">
+    <section className="home w-full flex flex-col space-y-12">
       <div className="bg-img-container">
         <Image
           src="/assets/images/crown-white-background.jpg"
@@ -17,9 +17,11 @@ function Home() {
         />
       </div>
       <Hero />
-      <Testimonial />
-      <PopularProducts />
-      <PopularServices />
+      <div className="home--intro bg-white space-y-24 mb-10">
+        <Testimonial />
+        <PopularProducts />
+        <PopularServices />
+      </div>
     </section>
   );
 }

@@ -3,8 +3,8 @@ import Link from "next/link";
 function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="flex flex-col gap-10 bg-black text-white flex-between w-full py-3 sm:px-3">
-      <Link href="/" className="flex gap-2 flex-center">
+    <footer className="flex flex-col gap-10 bg-black text-white flex-between w-screen py-3 sm:px-12">
+      <Link href="/" className=" gap-2 flex-center">
         <p className="logo_text">Pretty Queen</p>
       </Link>
       <div className="footer--info w-full flex-between flex-col lg:flex-row gap-12">
@@ -33,7 +33,7 @@ function Footer() {
           <p>Email@email.com</p>
         </div>
       </div>
-      <hr className="w-full bg-white" />
+      <hr className="w-full h-1 bg-amber-400 border-0"></hr>
       <p>Copyright&copy; {year} Justin Diaz . All Rights Reserved. </p>
     </footer>
   );

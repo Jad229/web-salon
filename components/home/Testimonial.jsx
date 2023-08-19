@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Testimonial() {
   return (
-    <div className="testimonial flex-center flex-col lg:flex-row lg:gap-24 bg-white md:py-24 ">
+    <div className="testimonial flex-center flex-col lg:flex-row lg:gap-24 bg-white md:py-12 ">
       <div className="testimonial-img-container drop-shadow-xl">
         <Image
           src="/assets/images/pretty-queen-logo.jpeg"
