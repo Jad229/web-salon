@@ -8,7 +8,7 @@ const Nav = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   return (
-    <nav className="z-100 flex-between w-full pt-3">
+    <nav className="sticky top-0 bg-neutral-900 flex-between z-50 backdrop-filter backdrop-blur-lg bg-opacity-10 w-screen py-3 px-5 md:px-24 ">
       <Link href="/" className="flex gap-2 flex-center">
         <p className="logo_text">Pretty Queen</p>
       </Link>

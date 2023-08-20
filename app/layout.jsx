@@ -10,7 +10,7 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="w-screen bg-white">
         <main className="app">
           <Nav />
           {children}

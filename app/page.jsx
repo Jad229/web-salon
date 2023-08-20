@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <section className="home w-full flex flex-col space-y-12">
+    <section className="home w-screen flex flex-col space-y-12">
       <div className="bg-img-container">
         <Image
           src="/assets/images/crown-white-background.jpg"

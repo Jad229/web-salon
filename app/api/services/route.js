@@ -29,7 +29,6 @@ export async function GET(req) {
 export async function POST(req) {
   const body = await req.json();
   const { name, price, tag } = body;
-  console.log(body);
 
   try {
     await connectDB();

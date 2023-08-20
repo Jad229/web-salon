@@ -6,10 +6,8 @@
 
 body {
   background-image: url("/assets/images/leaves-texture.png");
-  width: 100vw;
   overflow-x: hidden;
   font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
-  background-color: #d9d9d9;
 }
 
 .featured--services,
