@@ -18,14 +18,13 @@ function NavItems() {
       <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
         {isAdminView
           ? adminNavOptions.map((item) => (
-              <Link href={item.path}>
-                <li
-                  className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded md:p-0"
-                  key={item.id}
-                >
-                  {item.label}
-                </li>
-              </Link>
+              <div key={item.id}>
+                <Link href={item.path}>
+                  <li className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded md:p-0">
+                    {item.label}
+                  </li>
+                </Link>
+              </div>
             ))
           : navOptions.map((item) => (
               <Link href={item.path}>

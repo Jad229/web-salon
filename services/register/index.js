@@ -12,7 +12,8 @@ export const registerNewUser = async (formData) => {
       }
     );
 
-    const finalData = response.json();
+    // Access the response data directly from the "data" property
+    const finalData = response.data;
 
     return finalData;
   } catch (error) {

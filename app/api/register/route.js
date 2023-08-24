@@ -2,13 +2,12 @@ import User from "@models/user";
 import { connectDB } from "@utils/database";
 import { hash } from "bcrypt";
 import Joi from "joi";
-import dynamic from "next/dynamic";
 import { NextResponse } from "next/server";
 
 const schema = Joi.object({
   firstName: Joi.string().required(),
-  lastName: Joi.string().email().required(),
-  email: Joi.string().required(),
+  lastName: Joi.string().required(),
+  email: Joi.string().email().required(),
   password: Joi.string().min(8).required(),
 });
 
