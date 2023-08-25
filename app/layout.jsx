@@ -14,13 +14,11 @@ function RootLayout({ children }) {
     <html lang="en">
       <body className="w-screen bg-white">
         <AuthProvider>
-          <GlobalState>
-            <main className="app">
-              <Nav />
-              {children}
-              <Footer />
-            </main>
-          </GlobalState>
+          <main className="app">
+            <Nav />
+            {children}
+            <Footer />
+          </main>
         </AuthProvider>
       </body>
     </html>

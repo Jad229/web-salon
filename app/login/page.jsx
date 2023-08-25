@@ -1,20 +1,17 @@
 "use client";
 import InputComponent from "@components/FormElements/InputComponent";
 import { loginFormControls } from "@utils";
-
 import { signIn } from "next-auth/react";
 import Link from "next/link";
-import { redirect } from "next/navigation";
-
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Login() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
-  console.log(formData);
 
   function isValidForm() {
     return (
@@ -29,8 +26,7 @@ export default function Login() {
   async function handleLogin() {
     try {
       const res = await signIn("credentials", formData);
-
-      redirect("/products");
+      console.log(res);
     } catch (error) {
       console.log(error);
     }
