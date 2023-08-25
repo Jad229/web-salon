@@ -1,5 +1,7 @@
 import Footer from "@components/Footer.";
 import Nav from "@components/Nav";
+import { AuthProvider } from "@components/Providers";
+import GlobalState from "@context";
 import "@styles/globals.css";
 export const metadata = {
   title: "Pretty Queen - Your Ultimate Hair Salon Experience",
@@ -11,11 +13,15 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-screen bg-white">
-        <main className="app">
-          <Nav />
-          {children}
-          <Footer />
-        </main>
+        <AuthProvider>
+          <GlobalState>
+            <main className="app">
+              <Nav />
+              {children}
+              <Footer />
+            </main>
+          </GlobalState>
+        </AuthProvider>
       </body>
     </html>
   );

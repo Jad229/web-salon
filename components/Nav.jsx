@@ -1,6 +1,7 @@
 "use client";
 
 import { adminNavOptions, navOptions } from "@utils";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
@@ -13,6 +14,9 @@ const user = {
 };
 
 function NavItems() {
+  const { data: session } = useSession();
+
+  console.log(session);
   return (
     <div className="flex-between w-full md:flex md:w-auto" id="nav-items">
       <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">

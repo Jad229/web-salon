@@ -36,9 +36,9 @@ export default function Register() {
   }
 
   async function handleRegister() {
-    const data = await registerNewUser(formData);
+    const response = await registerNewUser(formData);
 
-    console.log(data);
+    console.log(response);
   }
 
   return (
