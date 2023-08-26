@@ -1,7 +1,7 @@
 "use client";
 import InputComponent from "@components/FormElements/InputComponent";
 import { loginFormControls } from "@utils";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -26,7 +26,6 @@ export default function Login() {
   async function handleLogin() {
     try {
       const res = await signIn("credentials", formData);
-      console.log(res);
     } catch (error) {
       console.log(error);
     }

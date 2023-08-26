@@ -13,9 +13,7 @@ export const registerNewUser = async (formData) => {
     );
 
     // Access the response data directly from the "data" property
-    const finalData = response.data;
-
-    return finalData;
+    return response.data;
   } catch (error) {
     console.log(error);
   }

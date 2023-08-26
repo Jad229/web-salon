@@ -1,5 +1,3 @@
-import React from "react";
-
 function InputComponent({ name, label, placeholder, onChange, value, type }) {
   return (
     <div className="relative w-full">

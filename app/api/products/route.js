@@ -15,10 +15,10 @@ export async function GET(req) {
 }
 
 export async function POST(req) {
+  await connectDB();
   const body = await req.json();
   const { name, price, type, imageUrl, description } = body;
   try {
-    await connectDB();
     const product = await Product.create({
       name,
       price,
