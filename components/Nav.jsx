@@ -8,7 +8,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 
 const Nav = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
-  const [isAdminView, setIsAdminView] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [isAuthUser, setIsAuthUser] = useState(false);
   const { data: session, status } = useSession();
   useEffect(() => {
@@ -17,14 +17,14 @@ const Nav = () => {
     }
 
     if (session?.user?.role === "admin") {
-      setIsAdminView(true);
+      setIsAdmin(true);
     }
   }, [session]);
   function NavItems() {
     return (
       <div className="flex-between w-full md:flex md:w-auto" id="nav-items">
         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-          {isAdminView
+          {isAdmin
             ? adminNavOptions.map((item) => (
                 <Link key={item.id} href={item.path}>
                   <li className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded md:p-0">
@@ -61,7 +61,7 @@ const Nav = () => {
           <NavItems />
         </div>
         <div className="flex-center gap-3 md:gap-5">
-          {!isAdminView && isAuthUser ? (
+          {!isAdmin && isAuthUser ? (
             <div className="flex-center gap-5">
               <Link href="/api/auth">
                 <button className="yellow_btn">Account</button>
@@ -71,8 +71,8 @@ const Nav = () => {
               </Link>
             </div>
           ) : null}
-          {isAdminView ? (
-            isAdminView ? (
+          {isAdmin ? (
+            isAdmin ? (
               <button className="outline_btn">Client View</button>
             ) : (
               <button className="outline_btn">Admin View</button>
